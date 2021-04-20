@@ -1,7 +1,7 @@
-# Refs
-
 # Next.js
 ## _app.tsx
+* https://nextjs.org/docs/basic-features/typescript#custom-app
+* https://stackoverflow.com/questions/64722812/what-typescript-type-should-nextjs-app-tsx-component-and-pageprops-be
 
 ## _document.tsx
 * https://nextjs.org/docs/advanced-features/custom-document#typescript
@@ -12,18 +12,37 @@
 
 ### getStaticProps
 * https://www.youtube.com/watch?v=MxlmfI9IxVs
+
 ### getServerSideProps
 * https://www.youtube.com/watch?v=61TngxLrP_0&t=965s
 
 ## SSO
-* [SSO]("https://webisfree.com/2020-08-25/[seo]-%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84-%EC%B5%9C%EC%A0%81%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-head-%EC%98%81%EC%97%AD-meta-%ED%83%9C%EA%B7%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0")
-
+* 
 ## ENV
 * https://www.youtube.com/watch?v=Mh9BJNfAVsM
 
 # emotion
 ## starter
-https://github.com/vercel/next.js/tree/canary/examples/with-emotion
+* https://github.com/vercel/next.js/tree/canary/examples/with-emotion
+## theme
+* https://emotion.sh/docs/theming
+* https://emotion.sh/docs/theming#themeprovider-reactcomponenttype
+```typescript
+// define your theme
+const theme = {
+  colors: {
+    blue: "blue",
+    brand: "hotpink",
+  },
+  spacing: {
+    small: "8px",
+    medium: "16px",
+  },
+}
+
+// define your theme type (that you can import and reuse everywhere)
+type Theme = typeof theme
+```
 
 # storybook
 ## starter

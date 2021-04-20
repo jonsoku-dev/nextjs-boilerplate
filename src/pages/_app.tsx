@@ -1,4 +1,5 @@
-import type { AppProps } from 'next/app'
+import type { AppContext, AppProps } from 'next/app'
+import App from 'next/app'
 
 import { globalStyles } from '@/shared/styles'
 
@@ -9,6 +10,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Component {...pageProps} />
     </>
   )
+}
+
+MyApp.getInitialProps = async (appContext: AppContext) => {
+  const appProps = await App.getInitialProps(appContext)
+
+  return { ...appProps }
 }
 
 export default MyApp
