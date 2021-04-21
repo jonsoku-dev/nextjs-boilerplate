@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": {
     "email": "the2792@gmail.com",
-    "name": "Ricky Lee"
+    "name": "Jongseok Lee"
   },
   "license": "MIT",
   "scripts": {
@@ -26,7 +26,6 @@
     ]
   },
   "dependencies": {
-    "@emotion/babel-plugin": "^11.3.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "next": "latest",
@@ -36,6 +35,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
+    "@emotion/babel-plugin": "^11.3.0",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
